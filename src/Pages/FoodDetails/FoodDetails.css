@@ -1,0 +1,89 @@
+.foodDetailsContainer{
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    border-radius: 2rem;
+}
+
+.foodDetailsIcon{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* padding-top: 2rem; */
+    font-size: 1.5rem;
+    
+}
+
+.foodDetailsImage{
+    display: flex;
+    justify-content: center;
+}
+
+.foodDetailsImage img{
+ width: 70%;
+
+}
+
+.foodDetailsPrice{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.foodDetailsPrice h2{
+    color: rgb(255, 255, 29);
+}
+
+.foodDetailsRating{
+    text-align: start;
+    border-bottom: 1px solid #000;
+    margin-bottom: 0.5rem;
+    font-size: 10px;
+}
+
+.foodDetailsRating svg{
+    font-size: 1rem;
+    /* color: goldenrod; */
+    
+
+}
+
+.foodDetailsRating svg path{
+    /* stroke: red; */
+    fill: goldenrod;
+    
+
+}
+
+.Ratings{
+    font-size: 19px;
+    
+}
+
+.foodDetailsInfo{
+    text-align: start;
+}
+
+.foodDetailsInfo h1{
+    margin-bottom: 0.5rem;
+    font-size: 18px;
+    font-weight: bold;
+    
+    
+}
+
+.foodDetailsInfo p{
+    font-size: 18px;
+    margin-bottom: 2rem;
+    
+}
+
+.foodDetailsButton{
+    /* padding-bottom: 2rem; */
+}
+
+.foodDetailsButton Button{
+    width: 100%;
+    color: black;
+}

@@ -1,0 +1,16 @@
+.buttonContainer{
+    width: inherit;
+}
+
+.btn{
+    width: inherit;
+    /* height: 50px; */
+    padding: 1.5rem 1rem;
+    border-radius: 24px;
+    border: none;
+    color: #ffc83a;
+    outline: none;
+    font-size: 1rem;
+    /* margin-bottom: 2rem; */
+ } 
+
