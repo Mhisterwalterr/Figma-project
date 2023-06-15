@@ -1,51 +1,48 @@
-.policyContainer{
-    display: flex;
-    flex-direction: column;
-    /* align-items: flex-start; */
-    gap: 2rem;
-    width: 100%;
-    height: 100%;
-    background-color: #ededed;
-    border-radius: 1rem;
-    padding: 1rem;
+.policyContainer {
+  display: flex;
+  flex-direction: column;
+  /* align-items: flex-start; */
+  gap: 2rem;
+  width: 100%;
+  height: 100%;
+  background-color: #ededed;
+  border-radius: 1rem;
+  padding: 1rem;
+  overflow-y: auto;
 }
 
-
-.policyHeader{
-    display: flex;
-    padding-bottom: 5rem;
-
-    
+.policyHeader {
+  display: flex;
+  padding-bottom: 5rem;
 }
 
-.policyIcon{
-    font-size: 30px;
+.policyIcon {
+  font-size: 30px;
 }
 
-.moiMoi{
-    margin-left: 2rem;
-    font-size: 22px;
-    padding-bottom: 1rem;
+.moiMoi {
+  margin-left: 2rem;
+  font-size: 22px;
+  padding-bottom: 1rem;
 }
 
-.policyBody{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
+.policyBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
 }
 
-.policySearch{
-    font-size: 100px;
+.policySearch {
+  font-size: 100px;
 }
 
-.policyBs{
-    color: rgb(206, 206, 214);
+.policyBs {
+  color: rgb(206, 206, 214);
 }
 
-.policyText{
-    font-size: 18px;
-    padding-top: 1rem;
+.policyText {
+  font-size: 18px;
+  padding-top: 1rem;
 }
-

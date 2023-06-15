@@ -1,16 +1,8 @@
-import { useState } from 'react'
-// import './App.css'
-import RouteComponent from './Route/Route'
+import { useState } from "react";
+import RouteComponent from "./Route/Route";
 
 function App() {
-  
-
-  return (
-    // <div className="App">
-      <RouteComponent />
-     
-    // </div>
-  )
+  return <RouteComponent />;
 }
 
-export default App
+export default App;

@@ -1,13 +1,13 @@
-import React from 'react'
-import { Outlet } from 'react-router-dom'
-import './PageContainer.css'
+import React from "react";
+import { Outlet } from "react-router-dom";
+import "./PageContainer.css";
 
-const PageContainer = () => {
+function PageContainer() {
   return (
     <div className='pageContainer'>
-        <Outlet />
+      <Outlet />
     </div>
-  )
+  );
 }
 
-export default PageContainer
+export default PageContainer;

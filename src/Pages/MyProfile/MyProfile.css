@@ -1,76 +1,68 @@
-.myProfileContainer{
-    width: 100%;
-    height: 100%;
-    background-color: #ededed;
-    padding: 2rem;
-    border-radius: 1rem;
+.myProfileContainer {
+  width: 100%;
+  height: 100%;
+  background-color: #ededed;
+  padding: 1rem;
+  border-radius: 1rem;
+  overflow-y: auto;
 }
 
-.profileIcon{
-    text-align: left;
-    padding-top: 2rem;
-    padding-bottom: 1.7rem;
+.profileIcon {
+  text-align: left;
+  padding-bottom: 1.5rem;
+  cursor: pointer;
+  width: fit-content;
 }
 
-.profileText{
-    text-align: left;
-    padding-bottom: 1.5rem;
+.profileIcon a svg {
+  font-size: 1.5rem;
 }
 
-.profileText1{
-    display: flex;
-    padding-bottom: 1rem;
-    justify-content: space-between;
+.profileText {
+  text-align: left;
+  padding-bottom: 1.5rem;
 }
 
-.profileInfo{
-    display: flex;
-    /* margin-left: 0.5rem; */
-    flex-direction: row;
-    text-align: left;
-    background-color: #fff;
-    margin-bottom: 2rem;
-    border-radius: 0.5rem;
-    /* background-color: #8a2929; */
-    padding: 1rem;
-    padding-bottom: 2rem;
+.profileText1 {
+  display: flex;
+  padding-bottom: 1rem;
+  justify-content: space-between;
 }
 
-.profileImage{
-    width: 80%;
-    border-radius: 50%;
-}
-.innerInfo{
-    margin-left: 1rem;
-}
-
-.innerInfo h5{
-    border-bottom: 1px solid #ecdcdc;
-}
-
-.profileList{
-    text-align: left;
+.profileInfo {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  background-color: #fff;
+  margin-bottom: 2rem;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  gap: 1rem;
+  justify-content: space-between;
 }
 
-.profileList div{
-    margin-bottom: 2rem;
-    
+.profileImage {
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 50%;
 }
 
-.innerList{
-    display: flex;
-    justify-content: space-between;
-    background-color: #fff;
-    border-radius: 1rem;
-    padding: 1rem;
-    /* padding-top: 1rem; */
-    /* padding-bottom: 1rem; */
-    /* background-color: #0b6622; */
+.innerInfo h5 {
+  border-bottom: 1px solid #ecdcdc;
 }
 
-
-
-span{
-  
+.profileList {
+  text-align: left;
 }
 
+.profileList div {
+  margin-bottom: 2rem;
+}
+
+.innerList {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: 1rem;
+}

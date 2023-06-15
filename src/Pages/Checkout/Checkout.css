@@ -1,134 +1,135 @@
-.checkoutContainer{
-    width: 100%;
-    height: 100%;
-    padding: 2rem;
-    background-color: #ededed;
-    border-radius: 1rem;
-
+.checkoutContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+  height: 100%;
+  padding: 1rem 1rem;
+  background-color: #ededed;
+  border-radius: 1rem;
+  overflow-y: auto;
 }
 
-.checkoutHeader{
-    display: flex;
-    margin-bottom: 1rem;
-
+.checkoutHeader {
+  display: flex;
+  justify-content: space-between;
+  width: 56.25%;
 }
 
-.checkoutArrow{
-    font-size: 1.5rem;
+.checkoutArrow {
+  font-size: 1.5rem;
+  cursor: pointer;
 }
 
-.checkoutHeader p{
-    font-size: 1.4rem;
-    margin-left: 5rem;
+.checkoutHeader p {
+  font-size: 1.4rem;
+  margin-left: 5rem;
 }
 
-.checkoutPayment{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 2rem;
-    /* justify-content: space-between; */
+.checkoutPayment {
+  display: flex;
+  flex-direction: column;
 }
 
-.checkoutPayment h1{
-    font-size: 35px;
+.checkoutPayment h1 {
+  font-size: 1.5rem;
 }
 
-.checkoutPayment p{
-    font-weight: bold;
-    margin-top: 2rem;
+.checkoutPayment p {
+  font-weight: bold;
+  margin-top: 0.5rem;
 }
 
-.chechoutPaymentMethod{
-    display: flex;
-    flex-direction: column;
-    /* background-color: #fff; */
-    /* padding: 2rem; */
-    
+.chechoutPaymentMethod {
+  display: flex;
+  flex-direction: column;
+  gap: 1.125rem;
 }
 
-
-.paymentMethod{
-    display: flex;
-    padding: 1.5rem;
-
+.paymentMethod {
+  display: flex;
 }
 
-.paymentMethod div{
-    margin-right: 1.3rem;
-    font-size: 1rem;
-    font-weight: bold;
+.paymentMethod div {
+  margin-right: 1.3rem;
+  font-size: 1rem;
+  font-weight: bold;
 }
-.input{
-    border-radius: 50%;
-}
-
-.paymentMethod div p{
-    font-size: 1.3rem;
-    font-weight: bold;
+.input {
+  border-radius: 50%;
 }
 
-.card{
-    background-color: rgb(211, 96, 30);
-    padding: 0.8rem;
-    color: #fff;
-    border-radius: 0.5rem;
+.paymentMethod div p {
+  font-size: 1rem;
+  font-weight: bold;
 }
 
-
-.castle{
-    background-color: rgb(252, 139, 139);
-    padding: 0.5rem;
-    color: #fff;
-    border-radius: 0.5rem;
+.paymentMethod .iconWrapper {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.money{
-    background-color: rgb(243, 243, 59);
-    padding: 0.5rem;
-    color: #050505;
-    border-radius: 0.5rem;
+.card {
+  background-color: rgb(211, 96, 30);
+  color: #fff;
 }
 
-.deliveryText{
-    font-size: 1.3rem;
-    font-weight: bolder;
-    margin-bottom: 1rem;
+.castle {
+  background-color: rgb(252, 139, 139);
+  color: #fff;
 }
 
-.deliveryMethod{
-    background-color: #FFF;
-    border-radius: 1rem;
+.money {
+  background-color: rgb(243, 243, 59);
+  color: #050505;
 }
 
-.method1{
-    display: flex;
-    padding: 1.3rem;
-
+.deliveryText {
+  font-size: 1.3rem;
+  font-weight: bolder;
 }
 
-.method1 input{
-    margin-right: 1.5rem;
+.deliveryMethod {
+  background-color: #fff;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1rem 1rem;
 }
 
-.method1 p{
-    font-weight: bold;
-}
-.method1Div{
-    border-bottom: 2px solid #e7dede;
+.method1 {
+  display: flex;
 }
 
-
-.deliveryPrice{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 1.5rem;
+.method1 input {
+  margin-right: 1rem;
 }
 
-.deliveryButton Button{
-    width: 100%;
-    color: #050505;
-    border-radius: 2rem;
-    margin-top: 1.3rem;
-    font-weight: bold;
+.method1 p {
+  font-weight: bold;
+}
+.method1Div {
+  border-bottom: 2px solid #e7dede;
+}
 
+.deliveryPrice {
+  display: flex;
+  justify-content: space-between;
+}
+
+.deliveryButton {
+  margin-top: auto;
+}
+
+.deliveryButton Button {
+  width: 100%;
+  color: #050505;
+  border-radius: 2rem;
+  font-weight: bold;
+  cursor: pointer;
 }

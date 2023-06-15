@@ -1,65 +1,66 @@
-.orderContainer{
-    display: flex;
-    width: 100%;
-    height: 100%;
-    padding: 2rem 1rem;
-    justify-content: space-between;
-    flex-direction: column;
-   
-    border-radius: 1rem;
-    background-color: #ededed;
-}
-
-.orderIcon{
+.orderContainer {
   display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 2rem 1rem;
+  justify-content: space-between;
+  flex-direction: column;
 
+  border-radius: 1rem;
+  background-color: #ededed;
+  overflow-y: auto;
 }
 
-
-.orderArrow{
-    font-size: 22px;
-    
-    /* margin-right: 4rem; */
-    /* fill: rgb(161, 161, 161); */
-}
-.orderIcon p{
-    margin-left: 5rem;
-    font-size: 1.3rem;
-    font-weight: bold;
-}
-
-
-.orderImage{
- padding-bottom: 4rem;
+.orderIcon {
+  display: flex;
   align-items: center;
-    text-align: center;
+  justify-content: space-between;
+  width: 56.25%;
 }
 
-
-.orderImage h1{
-    font-size: 23px;
+.orderIcon a {
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
 }
 
-.orderImage p{
-   /* font-weight: bold; */
-
+.orderArrow {
+  font-size: 1.25rem;
 }
 
-.cartIcon{
+.orderIcon p {
+  margin-left: 5rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.orderImage {
+  align-items: center;
+  text-align: center;
+}
+
+.orderImage h1 {
+  font-size: 23px;
+}
+
+.orderImage p {
+  /* font-weight: bold; */
+}
+
+.cartIcon {
   font-size: 100px;
-  
 }
 
-.orderBtn{
-    margin-top: 2rem;
-    width: 100%;
+.orderBtn {
+  margin-top: 2rem;
+  width: 100%;
 }
 
-.orderBtn Button{
-    color: black;
-    
+.orderBtn Button {
+  color: black;
 }
 
-.orderBtn  svg path{
-    fill: rgb(197, 195, 195);
+.orderBtn svg path {
+  fill: rgb(197, 195, 195);
 }

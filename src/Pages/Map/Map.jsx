@@ -1,10 +1,16 @@
-import React from 'react'
-import './Map.css'
+import React from "react";
+import "./Map.css";
 
-const Map = () => {
+function Map() {
   return (
-    <div>Map</div>
+  <div className="mapContainer">
+    <div>
+
+    </div>
+    
+
+  </div>
   )
 }
 
-export default Map
+export default Map;

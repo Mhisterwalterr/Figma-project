@@ -1,15 +1,14 @@
-import React from 'react'
+import React from "react";
 import { IoIosArrowBack } from "react-icons/io";
 
-const Profile = () => {
+function Profile() {
   return (
     <div className='profileContainer'>
       <div>
         <IoIosArrowBack />
       </div>
-
     </div>
-  )
+  );
 }
 
-export default Profile
+export default Profile;
