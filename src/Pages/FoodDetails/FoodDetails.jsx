@@ -6,7 +6,7 @@ import NavBar from "../../Component/Navbar/Navbar";
 import Ewwa from "../../Food/EwwaAgoyin.png";
 import Button from "../../Component/Button/Button";
 import "./FoodDetails.css";
-import { Link , useParams, useNavigate } from "react-router-dom";
+import { Link, useParams, useNavigate } from "react-router-dom";
 // import ratings from '../../Data/Ratins';
 import menu from "../Menu/Menu";
 import foodDescription from "../../Data/foodDescription";
@@ -18,7 +18,6 @@ function FoodDetails() {
   const foodId = params.id;
   const [foodData, setFoodData] = useState({});
   const navigate = useNavigate();
-
 
   useEffect(() => {
     // const result = foodDescription.filter((menu, key) => {
@@ -32,43 +31,38 @@ function FoodDetails() {
 
   const starArray = [...Array(foodData.rating)].map((_, index) => index);
   const handleAddToCart = () => {
-    const currentCartItems = JSON.parse(localStorage.getItem("cartItems")) || []
-    // creating a new object,,having a key 
+    const currentCartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+    // creating a new object,,having a key
     const foodObject = {
       data: foodData,
-      count: 1
-    }
+      count: 1,
+    };
     // searching through the cart items to find then existence of a food item in the local storage
-   let searchResult = currentCartItems.filter((item) => item.data.id === foodData.id)
-      // console.log(searchResult, 'searchResult')
-    if (searchResult.length === 0){
-      currentCartItems.push(foodObject)
-    }
-    else{
-      let itemIndex = currentCartItems.indexOf(searchResult[0])  
+    const searchResult = currentCartItems.filter((item) => item.data.id === foodData.id);
+    // console.log(searchResult, 'searchResult')
+    if (searchResult.length === 0) {
+      currentCartItems.push(foodObject);
+    } else {
+      const itemIndex = currentCartItems.indexOf(searchResult[0]);
       // console.log(itemIndex, 'itemIndex')
-     let updatedFoodObject = {...searchResult[0],  count: searchResult[0].count + 1} 
-    //  console.log(updatedFoodObject)
-    // replacing the old data with the updated one
-     currentCartItems.splice(itemIndex, 1, updatedFoodObject)
+      const updatedFoodObject = { ...searchResult[0], count: searchResult[0].count + 1 };
+      //  console.log(updatedFoodObject)
+      // replacing the old data with the updated one
+      currentCartItems.splice(itemIndex, 1, updatedFoodObject);
     }
 
-   
-  //  adding items to the local storage
-    localStorage.setItem("cartItems", JSON.stringify(currentCartItems))
-     navigate('/cart') 
-
-  }
+    //  adding items to the local storage
+    localStorage.setItem("cartItems", JSON.stringify(currentCartItems));
+    navigate("/cart");
+  };
   return (
     <div className='foodDetailsContainer'>
       <div className='foodDetailsIcon'>
         <Link to='/menu'>
           <BsArrowLeftShort />
         </Link>
-    
-        <AiOutlineHeart />
-        
 
+        <AiOutlineHeart />
       </div>
 
       <div className='foodDetailsImage'>
@@ -84,7 +78,9 @@ function FoodDetails() {
       <div className='foodDetailsRating'>
         <span className='Ratings'>Rating {foodData.rating}</span>
         <span>
-          {starArray.map((item, index) => <ImStarFull key={index} />)}
+          {starArray.map((item, index) => (
+            <ImStarFull key={index} />
+          ))}
         </span>
       </div>
 
@@ -102,9 +98,13 @@ function FoodDetails() {
       </div>
 
       <div className='foodDetailsButton'>
-      
-          <Button name="Add to cart" bgcolor='#ffc83a' color='black' textSize="18px"  onClick={()=> handleAddToCart()} />
-
+        <Button
+          name='Add to cart'
+          bgcolor='#ffc83a'
+          color='black'
+          textSize='18px'
+          onClick={() => handleAddToCart()}
+        />
       </div>
     </div>
   );

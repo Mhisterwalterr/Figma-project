@@ -23,7 +23,9 @@ export default function slug() {
       <div className='foodDetailsRating'>
         <span className='Ratings'>Rating 5.0</span>
         <span>
-          {starArray.map((item, index) => <ImStarFull key={index} />)}
+          {starArray.map((item, index) => (
+            <ImStarFull key={index} />
+          ))}
         </span>
       </div>
 
@@ -42,7 +44,7 @@ export default function slug() {
 
       <div className='foodDetailsButton'>
         <Link to='/cart'>
-          <Button name="Add to cart" bgcolor='#ffc83a' color='black' textSize="18px" />
+          <Button name='Add to cart' bgcolor='#ffc83a' color='black' textSize='18px' />
         </Link>
       </div>
     </div>

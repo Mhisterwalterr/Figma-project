@@ -1,4 +1,3 @@
-import { useState } from "react";
 import RouteComponent from "./Route/Route";
 
 function App() {

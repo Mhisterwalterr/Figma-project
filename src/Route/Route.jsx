@@ -23,7 +23,7 @@ function RouteComponent() {
     <BrowserRouter>
       <Routes>
         <Route element={<PageContainer />}>
-          <Route path='homepage' element={<Homepage />} />
+          <Route path='/' element={<Homepage />} />
           <Route path='/cart' element={<Cart />} />
           <Route path='/checkout' element={<Checkout />} />
           <Route path='/login' element={<Login />} />

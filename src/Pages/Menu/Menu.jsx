@@ -57,7 +57,9 @@ export default function menu() {
         <Link to='/sidemenu'>
           <RxHamburgerMenu />{" "}
         </Link>
+        <Link to='/cart'>
         <AiOutlineShoppingCart />
+        </Link>
       </div>
       <div className='menuText'>
         <p>

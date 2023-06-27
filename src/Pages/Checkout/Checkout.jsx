@@ -1,5 +1,5 @@
 import React from "react";
-import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+import { IoIosArrowBack } from "react-icons/io";
 import { AiOutlineIdcard } from "react-icons/ai";
 import { GiCastle } from "react-icons/gi";
 import { CiMoneyBill } from "react-icons/ci";

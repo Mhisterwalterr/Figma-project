@@ -53,6 +53,13 @@
   text-align: left;
   padding: 1.5rem 1rem 2rem 1rem;
 }
+
+.addressInfo input{
+  width: 100%;
+  border: none;
+  padding: 0.5rem;
+  
+}
 .class {
   border-bottom: 1px solid rgb(240, 219, 219);
   padding: 0.25rem;

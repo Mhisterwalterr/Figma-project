@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Search.css";
-import { useNavigate, useLocation , Link } from "react-router-dom";
+import { useNavigate, useLocation, Link } from "react-router-dom";
 import { BsArrowLeftShort } from "react-icons/bs";
 import foodDescription from "../../Data/foodDescription";
 import NavBar from "../../Component/Navbar/Navbar";
@@ -21,7 +21,9 @@ function Search() {
   }, []);
 
   const filterSearch = (data) => {
-    const result = foodDescription.filter((menu, key) => menu.name.toLowerCase().includes(data.toLowerCase()));
+    const result = foodDescription.filter((menu, key) =>
+      menu.name.toLowerCase().includes(data.toLowerCase()),
+    );
     console.log(result, "result");
     setFilteredResult(result);
   };
@@ -34,7 +36,7 @@ function Search() {
 
   return (
     <div className='searchContainer'>
-      <div> {<NavBar />}</div>
+      {/* <div> <NavBar /></div> */}
       <div className='searchIcon'>
         <span onClick={() => navigate(-1)} className='arrow'>
           <BsArrowLeftShort />
@@ -55,24 +57,24 @@ function Search() {
       <div className='cardWrapper'>
         {filteredResult.length > 0 ? (
           filteredResult.map((menu, index) => (
-              <div key={index} className='foodCard'>
-                <Link to={`/foodDetails/${menu.id}`}>
-                  <div className='searchMenuCard'>
-                    <div className='searchImageUrl'>
-                      <img src={menu.url} alt='' className='foodImage' />
-                    </div>
-
-                    <div className='searchPriceNameDiv'>
-                      <h3 className='menuName'>{menu.name}</h3>
-                      <h6 className='menuPrice'>
-                        <span>₦</span>
-                        {menu.price}
-                      </h6>
-                    </div>
+            <div key={index} className='foodCard'>
+              <Link to={`/foodDetails/${menu.id}`}>
+                <div className='searchMenuCard'>
+                  <div className='searchImageUrl'>
+                    <img src={menu.url} alt='' className='foodImage' />
                   </div>
-                </Link>
-              </div>
-            ))
+
+                  <div className='searchPriceNameDiv'>
+                    <h3 className='menuName'>{menu.name}</h3>
+                    <h6 className='menuPrice'>
+                      <span>₦</span>
+                      {menu.price}
+                    </h6>
+                  </div>
+                </div>
+              </Link>
+            </div>
+          ))
         ) : (
           <p> Oops we dont have that on our menu now.</p>
         )}
